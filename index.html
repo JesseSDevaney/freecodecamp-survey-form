@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <title>Programming Preferences Survey</title>
+</head>
+<body>
+  <div id="container">
+    <header id="survey_title">
+      <h1 id="title">CS-199: Course Feedback Survey</h1>
+      <p id="description">We are always trying to update our course to keep up with industry standards, so that our students can have a sucessful career. We highly recommened leaving us feedback, so we can improve our course for the future.</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <div class="field">
+          <label id="name-label" for="name">Name: </label>
+          <input id="name" type="text" placeholder='"John Doe"' required/>
+        </div>
+        <div class="field">
+          <label id="email-label" for="email">Email: </label>
+          <input id="email" type="email" placeholder='"john.doe@gmail.com"' required/>
+        </div>
+        <div class="field">
+          <label id="number-label" for="number">How would you rate the class on a scale from 1 to 10? <br />(1 = highly not recommended, 10 = highly recommended): </label>
+          <input id="number" type="number" min="1" max="10" placeholder="1-10" required/>
+        </div>
+        <div class="field">
+          <label for="dropdown">What type of learner are you:</label>
+          <select name="dropdown" id="dropdown" required>
+            <option selected disabled hidden value=""></option>
+            <option value="visual">Visual</option>
+            <option value="auditory">Auditory</option>
+            <option value="kinesthetic">Kinesthetic</option>
+            <option value="reading/writing">Reading/Writing</option>
+          </select>
+        </div>
+        <div class="field">
+          <fieldset>
+            <legend>How many years have you been programming?</legend>
+            <input id="0to2_years" name="experience" type="radio" value="0-2 years" required/>
+            <label for="0to2_years">0-2 years</label>
+            <input id="2to5_years" name="experience" type="radio" value="2-5 years" required/>
+            <label for="2to5_years">2-5 years</label>
+            <input id="5to10_years" name="experience" type="radio" value="5-10 years" required/>
+            <label for="5to10_years">5-10 years</label>
+            <input id="10+_years" name="experience" type="radio" value="10+ years" required/>
+            <label for="10+_years">10+ years</label>
+          </fieldset>
+        </div>
+        <div class="field">
+          <fieldset>
+            <legend>Which programming languages do you know?</legend>
+            <input id="r_language" type="checkbox" name="language" value="R"/>
+            <label for="r_language">R</label>
+            <input id="python" type="checkbox" name="language" value="python"/>
+            <label for="python">Python</label>
+            <input id="java" type="checkbox" name="language" value="java"/>
+            <label for="java">Java</label>
+            <input id="html" type="checkbox" name="language" value="html"/>
+            <label for="html">HTML</label>
+            <input id="css" type="checkbox" name="language" value="css"/>
+            <label for="css">CSS</label>
+          </fieldset>
+        </div>
+        <div class="field" id="comments_field">
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" type="textarea"></textarea>
+        </div>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
